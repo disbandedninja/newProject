@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Incident Documentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Toxic Social Interaction Incident Documentation</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>New Incident Report</h2>
+        <form id="incident-form" class="grid-form">
+          <label>Date/Time Occurred *<input type="datetime-local" name="occurredAt" required /></label>
+          <label>Location/Context *<input name="location" required /></label>
+          <label>People Involved *<textarea name="peopleInvolved" required></textarea></label>
+          <label>Category *<select name="category" id="category" required></select></label>
+          <label>Severity *<select name="severity" id="severity" required></select></label>
+          <label>Status *<select name="status" id="status" required></select></label>
+          <label>Short Summary *<input name="shortDescription" required /></label>
+          <label>Detailed Description *<textarea name="detailedDescription" required></textarea></label>
+          <label>Immediate Impact *<textarea name="impact" required></textarea></label>
+          <label>Evidence (links/refs)<textarea name="evidence"></textarea></label>
+          <label>Actions Taken<textarea name="actionsTaken"></textarea></label>
+          <button type="submit">Save Incident Report</button>
+        </form>
+        <p id="form-message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Filters</h2>
+        <form id="filter-form" class="grid-form">
+          <label>Severity<select id="filter-severity"><option value="">Any</option></select></label>
+          <label>Status<select id="filter-status"><option value="">Any</option></select></label>
+          <label>Category<select id="filter-category"><option value="">Any</option></select></label>
+          <button type="submit">Apply Filters</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Incident Reports</h2>
+        <div id="incident-list"></div>
+      </section>
+    </main>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
