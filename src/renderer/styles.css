@@ -1,0 +1,85 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+header {
+  background: #111827;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.incident-item {
+  border-top: 1px solid #e5e7eb;
+  padding: 0.75rem 0;
+}
+
+.incident-item:first-child {
+  border-top: none;
+}
+
+#form-message.success {
+  color: #15803d;
+}
+
+#form-message.error {
+  color: #b91c1c;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "incident-reporter-electron",
+  "version": "1.0.0",
+  "description": "Electron app for documenting toxic social interactions",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node scripts/start-electron.js",
+    "test": "node --test"
+  },
+  "optionalDependencies": {
+    "electron": "31.7.7"
+  }
+}
